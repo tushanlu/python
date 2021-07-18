@@ -1,0 +1,43 @@
+1.编写普通爬虫
+    创建项目
+    明确目标
+    创建爬虫
+    保存内容
+2.改造成分布式爬虫
+    1.改造爬虫
+       1.导入scrapy_redis中的分布式爬虫类
+       2.继承类
+       3.注销start_urls&allowed_domains
+       4.设置redis-key
+       5.设置__init__
+    2.改造配置文件
+     copy配置参数
+配置参数
+SPIDER_MODULES = ['xxx.spiders']
+NEWSPIDER_MODULE = 'xxx.spiders'
+
+USER_AGENT = 'scrapy-redis (+https://github.com/rolando/scrapy-redis)'
+
+# 设置重复过滤器的模块
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# 设置调取器, scrap_redis中的调度器具备与数据库交互的功能
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# 设置当爬虫结束的时候是否保持redi数据库中的去重集合与任务队列
+SCHEDULER_PERSIST = True
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderQueue"
+#SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderStack"
+
+ITEM_PIPELINES = {
+    # 'xxx.pipelines.ExamplePipeline': 300,
+    # 当开启该管道,数据会存到Redis数据库中
+    'scrapy_redis.pipelines.RedisPipeline': 400,
+}
+
+# LOG_LEVEL = 'DEBUG'
+# 设置redis数据库
+REDIS_URL = "redia://172.16.123.223:6379"
+
+# Introduce an artifical delay to make use of parallelism. to speed up the
+# crawl.
+DOWNLOAD_DELAY = 1

@@ -1,0 +1,10 @@
+表达式                                           描述
+//title[@lang="eng"]                            选择lang属性值为eng的所有title元素
+/bookstore/book[1]                              选取属于bookstore子元素的第一个book元素
+/booksotre/book[last()]                         选取bookstore子元素的最后一个book元素
+/booksotre/book[last()-1]                       选取属于bookstore子元素的倒数第二个book元素
+/booksotre/book[position()>1]                   选取bookstore下面的book元素，从第二个开始选择
+//book/title[text()='Harry Potter']             选取所有book下的title元素，仅仅选择文本为Harry Potter的title元素
+/bookstore/book[price>35.00]/titie              选取bookstore元素中的book元素的所有title元素，且其中的price元素的值须大于35.00
+//div[contains(@id, "qiushi_tag_")]             div中的id包含“qiushi_tag_”的div标签
+//span[contains(text(), "一页")]                 span的值包含“一页”二字的span标签

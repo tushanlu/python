@@ -1,0 +1,21 @@
+结构化数据:
+
+json:               xml:
+json模块             re模块-正则语法
+jsonpath模块         lxml模块-xpath语法
+
+
+非结构化数据:
+
+html:
+re模块-正则语法
+lxml模块-xpath语法
+BeautifulSoup-xpath-正则-css选择器
+pyquery-css选择器
+
+xml和html的区别:
+
+数据格式     描述                                             设计目标
+XML         Extensible Markup Language(可扩展标记语言)         被设计为传输和存储数据，其焦点是数据的内容
+HTML        HyperText Markup Language(超文本标记语言)          显示数据以及如何更好显示数据
+

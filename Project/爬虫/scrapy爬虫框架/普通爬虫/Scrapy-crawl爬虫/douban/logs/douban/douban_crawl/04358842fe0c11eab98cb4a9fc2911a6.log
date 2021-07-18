@@ -1,0 +1,821 @@
+2020-09-24 10:16:56 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: douban)
+2020-09-24 10:16:56 [scrapy.utils.log] INFO: Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.1.1, Platform Windows-10-10.0.17763-SP0
+2020-09-24 10:16:56 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'douban', 'LOG_FILE': 'logs\\douban\\douban_crawl\\04358842fe0c11eab98cb4a9fc2911a6.log', 'NEWSPIDER_MODULE': 'douban.spiders', 'SPIDER_MODULES': ['douban.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36 Edg/85.0.564.44'}
+2020-09-24 10:16:56 [scrapy.extensions.telnet] INFO: Telnet Password: a2eec54477f53b76
+2020-09-24 10:16:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-09-24 10:16:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-09-24 10:16:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-09-24 10:16:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-09-24 10:16:56 [scrapy.core.engine] INFO: Spider opened
+2020-09-24 10:16:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-09-24 10:16:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-09-24 10:16:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250> (referer: None)
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=25&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://movie.douban.com/top250?start=50&filter=> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3319755/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292052/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6786002/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1307914/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3319755/>
+{'name': ['怦然心动 Flipped'], 'score': '9.1'}
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291560/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292052/>
+{'name': ['肖申克的救赎 The Shawshank Redemption'], 'score': '9.7'}
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6786002/>
+{'name': ['触不可及 Intouchables'], 'score': '9.2'}
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1849031/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1307914/>
+{'name': ['无间道 無間道'], 'score': '9.2'}
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291560/>
+{'name': ['龙猫 となりのトトロ'], 'score': '9.2'}
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1849031/>
+{'name': ['当幸福来敲门 The Pursuit of Happyness'], 'score': '9.1'}
+2020-09-24 10:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5912992/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5912992/>
+{'name': ['熔炉 도가니'], 'score': '9.3'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291549/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25662329/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292213/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291549/>
+{'name': ['放牛班的春天 Les choristes'], 'score': '9.3'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291841/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=0&filter=> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25662329/>
+{'name': ['疯狂动物城 Zootopia'], 'score': '9.2'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=225&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2131459/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292064/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292213/>
+{'name': ['大话西游之大圣娶亲 西遊記大結局之仙履奇緣'], 'score': '9.2'}
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291841/>
+{'name': ['教父 The Godfather'], 'score': '9.3'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3793023/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2131459/>
+{'name': ['机器人总动员 WALL·E'], 'score': '9.3'}
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292064/>
+{'name': ['楚门的世界 The Truman Show'], 'score': '9.3'}
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3793023/>
+{'name': ['三傻大闹宝莱坞 3 Idiots'], 'score': '9.2'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1889243/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1889243/>
+{'name': ['星际穿越 Interstellar'], 'score': '9.3'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292000/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1299131/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293839/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292000/>
+{'name': ['搏击俱乐部 Fight Club'], 'score': '9.0'}
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1299131/>
+{'name': ['教父2 The Godfather: Part Ⅱ'], 'score': '9.2'}
+2020-09-24 10:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293839/>
+{'name': ['罗马假日 Roman Holiday'], 'score': '9.0'}
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1298624/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291828/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1299398/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1298624/>
+{'name': ['闻香识女人 Scent of a Woman'], 'score': '9.1'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291828/>
+{'name': ['天堂电影院 Nuovo Cinema Paradiso'], 'score': '9.2'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1299398/>
+{'name': ['大话西游之月光宝盒 西遊記第壹佰零壹回之月光寶盒'], 'score': '9.0'}
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/21937445/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291858/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1308807/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/21937445/>
+{'name': ['辩护人 변호인'], 'score': '9.2'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291858/>
+{'name': ['鬼子来了'], 'score': '9.3'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1308807/>
+{'name': ['哈尔的移动城堡 ハウルの動く城'], 'score': '9.1'}
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291583/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26752088/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1295038/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/21937452/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293182/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291583/>
+{'name': ['天空之城 天空の城ラピュタ'], 'score': '9.1'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26752088/>
+{'name': ['我不是药神'], 'score': '9.0'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1295038/>
+{'name': ["哈利·波特与魔法石 Harry Potter and the Sorcerer's Stone"], 'score': '9.1'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/21937452/>
+{'name': ['素媛 소원'], 'score': '9.3'}
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293182/>
+{'name': ['十二怒汉 12 Angry Men'], 'score': '9.4'}
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1294638/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1294638/>
+{'name': ['E.T. 外星人 E.T.: The Extra-Terrestrial'], 'score': '8.6'}
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1929463/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27191492/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27615441/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1929463/>
+{'name': ['少年派的奇幻漂流 Life of Pi'], 'score': '9.1'}
+2020-09-24 10:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291824/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:16:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27191492/>
+{'name': ['四个春天'], 'score': '8.9'}
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27615441/>
+{'name': ['网络谜踪 Searching'], 'score': '8.6'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292233/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291824/>
+{'name': ['黑鹰坠落 Black Hawk Down'], 'score': '8.7'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1304141/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5908478/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292233/>
+{'name': ['发条橙 A Clockwork Orange'], 'score': '8.6'}
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1304141/>
+{'name': ['黑客帝国2：重装上阵 The Matrix Reloaded'], 'score': '8.6'}
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5908478/>
+{'name': ['我爱你 그대를 사랑합니다'], 'score': '9.0'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1300117/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1397546/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1300117/>
+{'name': ['千钧一发 Gattaca'], 'score': '8.8'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25921812/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1397546/>
+{'name': ['追随 Following'], 'score': '8.9'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26393561/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25954475/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5964718/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25921812/>
+{'name': ['驴得水'], 'score': '8.3'}
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26393561/>
+{'name': ['小萝莉的猴神大叔 Bajrangi Bhaijaan'], 'score': '8.4'}
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25954475/>
+{'name': ['聚焦 Spotlight'], 'score': '8.8'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291568/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5964718/>
+{'name': ['一次别离 جدایی نادر از سیمین'], 'score': '8.7'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6874403/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291568/>
+{'name': ['东京物语 東京物語'], 'score': '9.2'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2297265/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6874403/>
+{'name': ['再次出发之纽约遇见你 Begin Again'], 'score': '8.6'}
+2020-09-24 10:17:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2213597/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2297265/>
+{'name': ['浪潮 Die Welle'], 'score': '8.7'}
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25807345/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2213597/>
+{'name': ['朗读者 The Reader'], 'score': '8.6'}
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25807345/>
+{'name': ['彗星来的那一夜 Coherence'], 'score': '8.5'}
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292528/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1304102/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292528/>
+{'name': ['猜火车 Trainspotting'], 'score': '8.5'}
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1304102/>
+{'name': ['谍影重重 The Bourne Identity'], 'score': '8.6'}
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2222996/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1419936/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5300054/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2222996/>
+{'name': ['步履不停 歩いても 歩いても'], 'score': '8.8'}
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1419936/>
+{'name': ['战争之王 Lord of War'], 'score': '8.7'}
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5300054/>
+{'name': ['波西米亚狂想曲 Bohemian Rhapsody'], 'score': '8.7'}
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2363506/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2363506/>
+{'name': ['地球上的星星 Taare Zameen Par'], 'score': '8.9'}
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3592854/> (referer: https://movie.douban.com/top250?start=225&filter=)
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291552/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2129039/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3592854/>
+{'name': ['疯狂的麦克斯4：狂暴之路 Mad Max: Fury Road'], 'score': '8.6'}
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291552/>
+{'name': ['指环王3：王者无敌 The Lord of the Rings: The Return of the King'],
+ 'score': '9.2'}
+2020-09-24 10:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2129039/>
+{'name': ['飞屋环游记 Up'], 'score': '9.0'}
+2020-09-24 10:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/30170448/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=200&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/30170448/>
+{'name': ['何以为家 كفرناحوم'], 'score': '9.1'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1300267/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26387939/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293172/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1300267/>
+{'name': ['乱世佳人 Gone with the Wind'], 'score': '9.3'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/20495023/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=150&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=175&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=125&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26387939/>
+{'name': ['摔跤吧！爸爸 Dangal'], 'score': '9.0'}
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293172/>
+{'name': ['末代皇帝 The Last Emperor'], 'score': '9.3'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=100&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1296141/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292365/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/20495023/>
+{'name': ['寻梦环游记 Coco'], 'score': '9.1'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=50&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=75&filter=> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1296141/>
+{'name': ['控方证人 Witness for the Prosecution'], 'score': '9.6'}
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292365/>
+{'name': ['活着'], 'score': '9.3'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1851857/> (referer: https://movie.douban.com/top250?start=25&filter=)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1851857/>
+{'name': ['蝙蝠侠：黑暗骑士 The Dark Knight'], 'score': '9.2'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292001/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291561/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1760622/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292063/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292001/>
+{'name': ["海上钢琴师 La leggenda del pianista sull'oceano"], 'score': '9.3'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1295124/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291561/>
+{'name': ['千与千寻 千と千尋の神隠し'], 'score': '9.4'}
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1760622/>
+{'name': ['香水 Perfume: The Story of a Murderer'], 'score': '8.5'}
+2020-09-24 10:17:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292063/>
+{'name': ['美丽人生 La vita è bella'], 'score': '9.5'}
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3011091/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3541415/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1295124/>
+{'name': ["辛德勒的名单 Schindler's List"], 'score': '9.5'}
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3011091/>
+{'name': ["忠犬八公的故事 Hachi: A Dog's Tale"], 'score': '9.4'}
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1308767/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3541415/>
+{'name': ['盗梦空间 Inception'], 'score': '9.3'}
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1308767/>
+{'name': ['谍影重重2 The Bourne Supremacy'], 'score': '8.7'}
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26614893/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1428175/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1867345/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26614893/>
+{'name': ['完美陌生人 Perfetti sconosciuti'], 'score': '8.5'}
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27059130/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1305690/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1428175/>
+{'name': ['血钻 Blood Diamond'], 'score': '8.7'}
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1867345/>
+{'name': ['遗愿清单 The Bucket List'], 'score': '8.6'}
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1438652/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1295399/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27059130/>
+{'name': ['大佛普拉斯'], 'score': '8.7'}
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1305690/>
+{'name': ['阿飞正传 阿飛正傳'], 'score': '8.5'}
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1438652/>
+{'name': ['无耻混蛋 Inglourious Basterds'], 'score': '8.6'}
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1295399/>
+{'name': ['七武士 七人の侍'], 'score': '9.2'}
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297359/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297359/>
+{'name': ['幽灵公主 もののけ姫'], 'score': '8.9'}
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6985810/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1300299/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1418834/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292215/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1298070/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297192/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6985810/>
+{'name': ['狩猎 Jagten'], 'score': '9.1'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1300299/>
+{'name': ['杀人回忆 살인의 추억'], 'score': '8.8'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1418834/>
+{'name': ['断背山 Brokeback Mountain'], 'score': '8.8'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292215/>
+{'name': ["天使爱美丽 Le fabuleux destin d'Amélie Poulain"], 'score': '8.7'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1298070/>
+{'name': ['加勒比海盗 Pirates of the Caribbean: The Curse of the Black Pearl'],
+ 'score': '8.8'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297192/>
+{'name': ['致命ID Identity'], 'score': '8.8'}
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1294371/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26799731/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1294371/>
+{'name': ['摩登时代 Modern Times'], 'score': '9.3'}
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1302425/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26799731/>
+{'name': ['请以你的名字呼唤我 Call Me by Your Name'], 'score': '8.9'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1302425/>
+{'name': ['喜剧之王 喜劇之王'], 'score': '8.8'}
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1652587/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1787291/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292370/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1652587/>
+{'name': ['阿凡达 Avatar'], 'score': '8.7'}
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1787291/>
+{'name': ['被嫌弃的松子的一生 嫌われ松子の一生'], 'score': '8.9'}
+2020-09-24 10:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3011235/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292370/>
+{'name': ['剪刀手爱德华 Edward Scissorhands'], 'score': '8.7'}
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3011235/>
+{'name': ['哈利·波特与死亡圣器(下) Harry Potter and the Deathly Hallows: Part 2'],
+ 'score': '8.9'}
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292679/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292679/>
+{'name': ['春光乍泄 春光乍洩'], 'score': '8.9'}
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292656/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2334904/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292656/>
+{'name': ['心灵捕手 Good Will Hunting'], 'score': '8.9'}
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293544/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292343/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11525673/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1294639/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2334904/>
+{'name': ['禁闭岛 Shutter Island'], 'score': '8.8'}
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293544/>
+{'name': ['沉默的羔羊 The Silence of the Lambs'], 'score': '8.8'}
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292343/>
+{'name': ['蝴蝶效应 The Butterfly Effect'], 'score': '8.8'}
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11525673/>
+{'name': ['布达佩斯大饭店 The Grand Budapest Hotel'], 'score': '8.8'}
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1294639/>
+{'name': ['勇敢的心 Braveheart'], 'score': '8.9'}
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292223/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291832/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1780330/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292223/>
+{'name': ['七宗罪 Se7en'], 'score': '8.8'}
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291832/>
+{'name': ['低俗小说 Pulp Fiction'], 'score': '8.9'}
+2020-09-24 10:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292262/> (referer: https://movie.douban.com/top250?start=75&filter=)
+2020-09-24 10:17:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1780330/>
+{'name': ['致命魔术 The Prestige'], 'score': '8.9'}
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292220/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292262/>
+{'name': ['美国往事 Once Upon a Time in America'], 'score': '9.2'}
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3442220/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3008247/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292220/>
+{'name': ['情书 Love Letter'], 'score': '8.9'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3442220/>
+{'name': ['海豚湾 The Cove'], 'score': '9.3'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3008247/>
+{'name': ['穿条纹睡衣的男孩 The Boy in the Striped Pajamas'], 'score': '9.1'}
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1303021/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292849/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1294408/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25958717/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1303021/>
+{'name': ['小鞋子 بچههای آسمان'], 'score': '9.2'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292849/>
+{'name': ['拯救大兵瑞恩 Saving Private Ryan'], 'score': '9.0'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1294408/>
+{'name': ['音乐之声 The Sound of Music'], 'score': '9.0'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25958717/>
+{'name': ['海蒂和爷爷 Heidi'], 'score': '9.2'}
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1485260/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292402/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26580232/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1485260/>
+{'name': ['本杰明·巴顿奇事 The Curious Case of Benjamin Button'], 'score': '8.9'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292402/>
+{'name': ['西西里的美丽传说 Malèna'], 'score': '8.9'}
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26580232/>
+{'name': ['看不见的客人 Contratiempo'], 'score': '8.8'}
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3742360/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291818/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27060077/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3742360/>
+{'name': ['让子弹飞'], 'score': '8.8'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291818/>
+{'name': ['饮食男女 飲食男女'], 'score': '9.1'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27060077/>
+{'name': ['绿皮书 Green Book'], 'score': '8.9'}
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1306029/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293350/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292224/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1306029/>
+{'name': ['美丽心灵 A Beautiful Mind'], 'score': '9.0'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293350/>
+{'name': ['两杆大烟枪 Lock, Stock and Two Smoking Barrels'], 'score': '9.1'}
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291571/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292224/>
+{'name': ["飞越疯人院 One Flew Over the Cuckoo's Nest"], 'score': '9.1'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291571/>
+{'name': ['指环王1：魔戒再现 The Lord of the Rings: The Fellowship of the Ring'],
+ 'score': '9.0'}
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1305487/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291843/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1900841/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1296736/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1305487/>
+{'name': ['猫鼠游戏 Catch Me If You Can'], 'score': '9.0'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291843/>
+{'name': ['黑客帝国 The Matrix'], 'score': '9.0'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1900841/>
+{'name': ['窃听风暴 Das Leben der Anderen'], 'score': '9.1'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1296736/>
+{'name': ['钢琴家 The Pianist'], 'score': '9.2'}
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1301753/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291548/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1418019/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291572/> (referer: https://movie.douban.com/top250?start=50&filter=)
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1301753/>
+{'name': ['狮子王 The Lion King'], 'score': '9.0'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291548/>
+{'name': ['死亡诗社 Dead Poets Society'], 'score': '9.1'}
+2020-09-24 10:17:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1418019/>
+{'name': ['大闹天宫'], 'score': '9.3'}
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291572/>
+{'name': ['指环王2：双塔奇兵 The Lord of the Rings: The Two Towers'], 'score': '9.1'}
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4202302/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4268598/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4917726/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4202302/>
+{'name': ['借东西的小人阿莉埃蒂 借りぐらしのアリエッティ'], 'score': '8.8'}
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4268598/>
+{'name': ['告白'], 'score': '8.7'}
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4917726/>
+{'name': ['阳光姐妹淘 써니'], 'score': '8.8'}
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291545/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292337/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5989818/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1305164/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291545/>
+{'name': ['大鱼 Big Fish'], 'score': '8.8'}
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292337/>
+{'name': ['无人知晓 誰も知らない'], 'score': '9.1'}
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5989818/>
+{'name': ['萤火之森 蛍火の杜へ'], 'score': '8.9'}
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1305164/>
+{'name': ['甜蜜蜜'], 'score': '8.8'}
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11026735/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11026735/>
+{'name': ['超能陆战队 Big Hero 6'], 'score': '8.7'}
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5322596/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297447/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5322596/>
+{'name': ['超脱 Detachment'], 'score': '8.9'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297052/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3395373/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1306249/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3072124/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297447/>
+{'name': ['倩女幽魂'], 'score': '8.7'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292434/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297052/>
+{'name': ['侧耳倾听 耳をすませば'], 'score': '8.9'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3395373/>
+{'name': ['蝙蝠侠：黑暗骑士崛起 The Dark Knight Rises'], 'score': '8.8'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1306249/>
+{'name': ['唐伯虎点秋香 唐伯虎點秋香'], 'score': '8.6'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3072124/>
+{'name': ['玛丽和马克思 Mary and Max'], 'score': '8.9'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292434/>
+{'name': ['一一'], 'score': '9.0'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1296339/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25814707/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/21318488/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1296339/>
+{'name': ['爱在黎明破晓前 Before Sunrise'], 'score': '8.8'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25814707/>
+{'name': ['小森林 冬春篇 リトル・フォレスト 冬・春'], 'score': '9.0'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/21318488/>
+{'name': ['消失的爱人 Gone Girl'], 'score': '8.7'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25814705/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1865703/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291999/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25814705/>
+{'name': ['小森林 夏秋篇 リトル・フォレスト 夏・秋'], 'score': '9.0'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2149806/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297630/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1865703/>
+{'name': ['红辣椒 パプリカ'], 'score': '9.0'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291999/>
+{'name': ['重庆森林 重慶森林'], 'score': '8.7'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291875/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2149806/>
+{'name': ['入殓师 おくりびと'], 'score': '8.8'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297630/>
+{'name': ['第六感 The Sixth Sense'], 'score': '8.9'}
+2020-09-24 10:17:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10777687/> (referer: https://movie.douban.com/top250?start=100&filter=)
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291875/>
+{'name': ['阳光灿烂的日子'], 'score': '8.8'}
+2020-09-24 10:17:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10777687/>
+{'name': ['7号房的礼物 7번방의 선물'], 'score': '8.9'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292208/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291585/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6307447/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1417598/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1307315/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292208/>
+{'name': ['上帝之城 Cidade de Deus'], 'score': '8.9'}
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291585/>
+{'name': ['风之谷 風の谷のナウシカ'], 'score': '8.9'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1294240/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6307447/>
+{'name': ['被解救的姜戈 Django Unchained'], 'score': '8.7'}
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1417598/>
+{'name': ['电锯惊魂 Saw'], 'score': '8.7'}
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1307315/>
+{'name': ['哪吒闹海'], 'score': '9.1'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25986180/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1294240/>
+{'name': ['教父3 The Godfather: Part III'], 'score': '8.9'}
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25986180/>
+{'name': ['釜山行 부산행'], 'score': '8.5'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10577869/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291544/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10577869/>
+{'name': ['时空恋旅人 About Time'], 'score': '8.7'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1418200/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1428581/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1858711/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291544/>
+{'name': ['哈利·波特与阿兹卡班的囚徒 Harry Potter and the Prisoner of Azkaban'],
+ 'score': '8.7'}
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1418200/>
+{'name': ['傲慢与偏见 Pride & Prejudice'], 'score': '8.6'}
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1428581/>
+{'name': ['天书奇谭'], 'score': '9.2'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3287562/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1858711/>
+{'name': ['玩具总动员3 Toy Story 3'], 'score': '8.8'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291579/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3287562/>
+{'name': ['神偷奶爸 Despicable Me'], 'score': '8.6'}
+2020-09-24 10:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26325320/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291579/>
+{'name': ['怪兽电力公司 Monsters, Inc.'], 'score': '8.7'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26874505/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26325320/>
+{'name': ['血战钢锯岭 Hacksaw Ridge'], 'score': '8.7'}
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26874505/>
+{'name': ['人生果实 人生フルーツ'], 'score': '9.5'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291990/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/21360417/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291990/>
+{'name': ['爱在日落黄昏时 Before Sunset'], 'score': '8.8'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293359/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/21360417/>
+{'name': ['恐怖直播 더 테러 라이브'], 'score': '8.8'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291543/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1300992/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293359/>
+{'name': ['菊次郎的夏天 菊次郎の夏'], 'score': '8.8'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292274/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291543/>
+{'name': ['功夫'], 'score': '8.6'}
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1300992/>
+{'name': ['完美的世界 A Perfect World'], 'score': '9.1'}
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292274/>
+{'name': ['幸福终点站 The Terminal'], 'score': '8.8'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1316510/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1302827/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1316510/>
+{'name': ['射雕英雄传之东成西就 射鵰英雄傳之東成西就'], 'score': '8.7'}
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1302827/>
+{'name': ['人工智能 Artificial Intelligence: AI'], 'score': '8.6'}
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10808442/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2353023/> (referer: https://movie.douban.com/top250?start=125&filter=)
+2020-09-24 10:17:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1296909/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10808442/>
+{'name': ['爱在午夜降临前 Before Midnight'], 'score': '8.8'}
+2020-09-24 10:17:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2353023/>
+{'name': ['驯龙高手 How to Train Your Dragon'], 'score': '8.7'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1307811/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1296909/>
+{'name': ['虎口脱险 La grande vadrouille'], 'score': '8.9'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293460/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1307811/>
+{'name': ['魔女宅急便 魔女の宅急便'], 'score': '8.6'}
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293460/>
+{'name': ["雨中曲 Singin' in the Rain"], 'score': '9.0'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25724855/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1862151/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25724855/>
+{'name': ['房间 Room'], 'score': '8.8'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1300374/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1862151/>
+{'name': ['疯狂的石头'], 'score': '8.5'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3011051/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1300374/>
+{'name': ['绿里奇迹 The Green Mile'], 'score': '8.8'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26430107/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26787574/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3011051/>
+{'name': ['恐怖游轮 Triangle'], 'score': '8.5'}
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26430107/>
+{'name': ['二十二'], 'score': '8.7'}
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26787574/>
+{'name': ['奇迹男孩 Wonder'], 'score': '8.6'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25980443/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293181/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27622447/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1309163/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25980443/>
+{'name': ['海边的曼彻斯特 Manchester by the Sea'], 'score': '8.6'}
+2020-09-24 10:17:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291578/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293181/>
+{'name': ['惊魂记 Psycho'], 'score': '9.0'}
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27622447/>
+{'name': ['小偷家族 万引き家族'], 'score': '8.7'}
+2020-09-24 10:17:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1309163/>
+{'name': ['恋恋笔记本 The Notebook'], 'score': '8.5'}
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291578/>
+{'name': ['冰川时代 Ice Age'], 'score': '8.6'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291870/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291870/>
+{'name': ['雨人 Rain Man'], 'score': '8.7'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4848115/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6534248/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4848115/>
+{'name': ['你看起来好像很好吃 おまえうまそうだな'], 'score': '8.9'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25895901/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10437779/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6534248/>
+{'name': ['无敌破坏王 Wreck-It Ralph'], 'score': '8.7'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10533913/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25895901/>
+{'name': ['海街日记 海街diary'], 'score': '8.8'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1959195/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10437779/>
+{'name': ['新世界 신세계'], 'score': '8.8'}
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10533913/>
+{'name': ['头脑特工队 Inside Out'], 'score': '8.7'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1978709/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1959195/>
+{'name': ['忠犬八公物语 ハチ公物語'], 'score': '9.2'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1395091/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1978709/>
+{'name': ['黑天鹅 Black Swan'], 'score': '8.6'}
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1395091/>
+{'name': ['未麻的部屋 Perfect Blue'], 'score': '9.0'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292401/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25773932/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1302467/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292401/>
+{'name': ['真爱至上 Love Actually'], 'score': '8.6'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292328/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2209573/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25773932/>
+{'name': ['爆裂鼓手 Whiplash'], 'score': '8.7'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/24750126/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1302467/>
+{'name': ['黑客帝国3：矩阵革命 The Matrix Revolutions'], 'score': '8.8'}
+2020-09-24 10:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293318/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292328/>
+{'name': ['东邪西毒 東邪西毒'], 'score': '8.6'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2209573/>
+{'name': ['贫民窟的百万富翁 Slumdog Millionaire'], 'score': '8.6'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/24750126/>
+{'name': ['荒蛮故事 Relatos salvajes'], 'score': '8.8'}
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26683290/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293318/>
+{'name': ['萤火虫之墓 火垂るの墓'], 'score': '8.7'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26683290/>
+{'name': ['你的名字。 君の名は。'], 'score': '8.4'}
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291822/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291557/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1304447/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291822/>
+{'name': ['卢旺达饭店 Hotel Rwanda'], 'score': '8.9'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291557/>
+{'name': ['花样年华 花樣年華'], 'score': '8.7'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1304447/>
+{'name': ['记忆碎片 Memento'], 'score': '8.6'}
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1295409/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1907966/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25917973/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1295409/>
+{'name': ['纵横四海 緃横四海'], 'score': '8.8'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1907966/>
+{'name': ['疯狂原始人 The Croods'], 'score': '8.7'}
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25917973/>
+{'name': ['心迷宫'], 'score': '8.7'}
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3792799/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26628357/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26611804/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3792799/>
+{'name': ['岁月神偷 歲月神偷'], 'score': '8.7'}
+2020-09-24 10:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1296996/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26628357/>
+{'name': ['一个叫欧维的男人决定去死 En man som heter Ove'], 'score': '8.8'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26611804/>
+{'name': ['三块广告牌 Three Billboards Outside Ebbing, Missouri'], 'score': '8.7'}
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1793929/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1296996/>
+{'name': ['哈利·波特与密室 Harry Potter and the Chamber of Secrets'], 'score': '8.7'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1793929/>
+{'name': ['达拉斯买家俱乐部 Dallas Buyers Club'], 'score': '8.8'}
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1578507/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1303037/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1306861/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1578507/>
+{'name': ['谍影重重3 The Bourne Ultimatum'], 'score': '8.8'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1303037/>
+{'name': ['喜宴 囍宴'], 'score': '8.9'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1306861/>
+{'name': ['我是山姆 I Am Sam'], 'score': '8.9'}
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1303394/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10463953/> (referer: https://movie.douban.com/top250?start=175&filter=)
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297574/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4920389/> (referer: https://movie.douban.com/top250?start=150&filter=)
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1303394/>
+{'name': ['青蛇'], 'score': '8.5'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10463953/>
+{'name': ['模仿游戏 The Imitation Game'], 'score': '8.7'}
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1297518/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297574/>
+{'name': ['英雄本色'], 'score': '8.7'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4920389/>
+{'name': ['头号玩家 Ready Player One'], 'score': '8.7'}
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1297518/>
+{'name': ['九品芝麻官'], 'score': '8.5'}
+2020-09-24 10:17:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3075287/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3075287/>
+{'name': ['源代码 Source Code'], 'score': '8.5'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1295865/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1309055/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292287/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1295865/>
+{'name': ['燃情岁月 Legends of the Fall'], 'score': '8.8'}
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1309055/>
+{'name': ['哈利·波特与火焰杯 Harry Potter and the Goblet of Fire'], 'score': '8.6'}
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292287/>
+{'name': ['新龙门客栈 新龍門客棧'], 'score': '8.6'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292329/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1828115/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1937946/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292329/>
+{'name': ['牯岭街少年杀人事件 牯嶺街少年殺人事件'], 'score': '8.8'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3443389/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1828115/>
+{'name': ['色，戒'], 'score': '8.5'}
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1937946/>
+{'name': ['穿越时空的少女 時をかける少女'], 'score': '8.6'}
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3443389/>
+{'name': ['海洋 Océans'], 'score': '9.1'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293908/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1293964/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293908/>
+{'name': ['城市之光 City Lights'], 'score': '9.3'}
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1293964/>
+{'name': ['魂断蓝桥 Waterloo Bridge'], 'score': '8.8'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4739952/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292226/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4739952/>
+{'name': ['初恋这件小事 สิ่งเล็กเล็กที่เรียกว่า...รัก'], 'score': '8.4'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291879/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292226/>
+{'name': ['2001太空漫游 2001: A Space Odyssey'], 'score': '8.8'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1308857/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291879/>
+{'name': ['罗生门 羅生門'], 'score': '8.8'}
+2020-09-24 10:17:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1308857/>
+{'name': ['可可西里'], 'score': '8.8'}
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291844/> (referer: https://movie.douban.com/top250?start=200&filter=)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1295644/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292722/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291844/>
+{'name': ['终结者2：审判日 Terminator 2: Judgment Day'], 'score': '8.7'}
+2020-09-24 10:17:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1295644/>
+{'name': ['这个杀手不太冷 Léon'], 'score': '9.4'}
+2020-09-24 10:17:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292722/>
+{'name': ['泰坦尼克号 Titanic'], 'score': '9.4'}
+2020-09-24 10:17:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1291546/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1292720/> (referer: https://movie.douban.com/top250)
+2020-09-24 10:17:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1291546/>
+{'name': ['霸王别姬'], 'score': '9.6'}
+2020-09-24 10:17:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1292720/>
+{'name': ['阿甘正传 Forrest Gump'], 'score': '9.5'}
+2020-09-24 10:17:17 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-09-24 10:17:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 110029,
+ 'downloader/request_count': 261,
+ 'downloader/request_method_count/GET': 261,
+ 'downloader/response_bytes': 7471601,
+ 'downloader/response_count': 261,
+ 'downloader/response_status_count/200': 261,
+ 'dupefilter/filtered': 114,
+ 'elapsed_time_seconds': 21.116867,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 9, 24, 2, 17, 17, 440623),
+ 'item_scraped_count': 250,
+ 'log_count/DEBUG': 512,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 3,
+ 'response_received_count': 261,
+ 'scheduler/dequeued': 261,
+ 'scheduler/dequeued/memory': 261,
+ 'scheduler/enqueued': 261,
+ 'scheduler/enqueued/memory': 261,
+ 'start_time': datetime.datetime(2020, 9, 24, 2, 16, 56, 323756)}
+2020-09-24 10:17:17 [scrapy.core.engine] INFO: Spider closed (finished)
